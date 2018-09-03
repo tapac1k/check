@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+<body>
+<head>
+<script>
+var uagent = navigator.userAgent.toLowerCase();
+
+if (uagent.search("iphone") > -1 ||
+    uagent.search("ipod") > -1 ||
+    uagent.search("ipad") > -1 ||
+    uagent.search("appletv") > -1) {
+   window.location.replace("https://itunes.apple.com/ua/app/duomo-bible-study-devotions/id1407853508?mt=8");       
+}
+els if(navigator.userAgent.match(/Android/i)) {
+        window.location.replace("market://details?id=world.duomo.duomo");
+    }
+    else {
+        window.location.replace( "https://duomo.world");
+    }
+</script>
+</head>
+</body>
+</html>
+
